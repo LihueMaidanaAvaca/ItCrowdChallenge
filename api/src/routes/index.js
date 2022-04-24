@@ -1,15 +1,15 @@
-const { Router, response } = require('express');
-
+const { Router } = require('express');
+const response = require('../mockups/products.json')
 const axios = require ('axios')
 const { Product, Brand } = require ('../db')
 // const products = require ('./mockups/products.json')
 
 const router = Router();
 
-const getMockUpInfo = async () => {
+const getMockUpInfo = () => {
     
-    const response = await axios('http://127.0.0.1:5500/api/src/mockups/products.json')
-    const products = response.data.map(p=> {
+   
+    const products = response.map(p=> {
         return {
           id: p.id,  
           name: p.name,
@@ -61,8 +61,7 @@ router.get('/products', async (req, res) => {
 
 router.get('/brands', async (req, res)=>{
   
-    const brandsresponse = await axios.get('http://127.0.0.1:5500/api/src/mockups/products.json')
-    const brands = brandsresponse.data.map(product => product.brand)
+    const brands = response.map(product => product.brand)
        
         
             brands.forEach(brand => {

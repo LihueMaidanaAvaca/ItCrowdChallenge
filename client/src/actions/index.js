@@ -16,7 +16,7 @@ export function getProducts() {
     return async function(dispatch){
         try{
             
-            var json = await axios("http://localhost:3001/products");
+            var json = await axios("/products");
             console.log('action', json.data)
             return dispatch({
                 type: GET_PRODUCTS,
@@ -30,7 +30,7 @@ export function getNameProduct(name){
     
     return async function(dispatch){
         try{
-            var json = await axios("http://localhost:3001/products?name="+name);
+            var json = await axios("/products?name="+name);
             return dispatch ({
                 type : GET_NAMEPRODUCTS,
                 payload: json.data
@@ -53,7 +53,7 @@ export function getBrands(){
     return async function (dispatch) {
         try{
 
-            var info = await axios("http://localhost:3001/brands", {
+            var info = await axios("/brands", {
                 
             });
             return dispatch({ 
@@ -66,7 +66,7 @@ export function getBrands(){
 
 export async function postNewProduct(payload){
     
-    const response = await axios.post("http://localhost:3001/product", payload);
+    const response = await axios.post("/product", payload);
     return response;
 
 }
@@ -102,7 +102,7 @@ export function orderByPrice(payload){
 export function getDetail(id){
     return async function(dispatch){
         try{
-            var json = await axios.get("http://localhost:3001/products/"+id);
+            var json = await axios.get("/products/"+id);
             return dispatch({
                 type: GET_DETAILS,
                 payload: json.data
