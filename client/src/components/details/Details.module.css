@@ -1,0 +1,40 @@
+.back{
+    height: 100vh;
+    width: 100vw; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;  
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+.megacard{
+    background-color: rgba(100, 149, 213, 0.535);
+    border-radius: 30px 30px 30px 30px;
+    height: 600px;
+    width: 1300px;
+}
+
+.image{
+    float: left;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color:rgb(255, 255, 255)
+}
+
+.word{
+    font-family: 'Lobster', cursive;
+    color:rgb(236, 226, 216)
+
+}
+
+.summary{
+    font-family: 'Lobster', cursive;
+    font-size: 120%;
+    color:rgb(223, 219, 215)
+}

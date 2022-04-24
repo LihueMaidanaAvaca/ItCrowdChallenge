@@ -1,0 +1,322 @@
+[
+    {   
+        "id":"1",
+        "name":"AirMax Sc",
+        "description":"Look stylish in your workouts or in your day-to-day thanks to the Nike Air Max Bella Tr 2 Shoes, their Air max technology gives you better and cushioned footsteps that will make you feel safe and confident any time you wear them. | Nike Air Max Sneakers | Right handed",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_717301-MLA46952566114_082021-W.webp",
+        "price":"70.00",
+        "brand":"Nike"
+    },
+    {
+        "id":"2",
+        "name":"El Barto",
+        "description":"Keep your feet comfortable and your style impeccable at all times with these adidas shoes. Wear them with your favorite running shorts for a sporty, casual look. A mesh upper helps keep your feet cool, while ultralight cushioning supports you with every step.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_615060-MLA49052351432_022022-W.webp",
+        "price":"80.00",
+        "brand":"Adidas"
+    },
+    {
+        "id":"4",
+        "name":"Tensaur",
+        "description":"Keep your feet comfortable and your style impeccable at all times with these adidas shoes. Wear them with your favorite running shorts for a sporty, casual look. A mesh upper helps keep your feet cool, while ultralight cushioning supports you with every step.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_924704-MLA49170790980_022022-W.webp",
+        "price":"50.00",
+        "brand":"Adidas"
+    },
+    {
+        "id":"5",
+        "name":"AirMax Excee",
+        "description":"Look stylish in your workouts or in your day-to-day thanks to the Nike Air Max Bella Tr 2 Shoes, their Air max technology gives you better and cushioned footsteps that will make you feel safe and confident any time you wear them. | Nike Air Max Sneakers | Right handed",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_922812-MLA41971756678_052020-W.webp",
+        "price":"80.00",
+        "brand":"Nike"
+    },
+    {
+        "id":"6",
+        "name":"9063",
+        "description":"Jaguar has a complete line of footwear specially designed for its customers. Their products are innovative and comfortable. They adapt to your routine.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_893799-MLA47321472480_092021-W.webp",
+        "price":"90.00",
+        "brand":"Jaguar"
+    },
+    {
+        "id":"7",
+        "name":"237",
+        "description":"Our New Balance shoes are made for those who seek comfort and are also looking for a great performance design. This shoe is inspired by high-end running shoes. With a soft midsole for cushioning, a molded heel for extra support, and a rubber outsole for durability, it's ready for anything.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_966237-MLA46117390796_052021-W.webp",
+        "price":"50.00",
+        "brand":"NewBalance"
+    },
+    {
+        "id":"8",
+        "name":"413",
+        "description":"Our New Balance shoes are made for those who seek comfort and are also looking for a great performance design. This shoe is inspired by high-end running shoes. With a soft midsole for cushioning, a molded heel for extra support, and a rubber outsole for durability, it's ready for anything.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_620193-MLA47395710255_092021-W.webp",
+        "price":"50.00",
+        "brand":"NewBalance"
+    },
+    {
+        "id":"9",
+        "name":"Response",
+        "description":"Keep your feet comfortable and your style impeccable at all times with these adidas shoes. Wear them with your favorite running shorts for a sporty, casual look. A mesh upper helps keep your feet cool, while ultralight cushioning supports you with every step.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_987257-MLA49526030367_032022-W.webp",
+        "price":"70.00",
+        "brand":"Adidas"
+    },
+    {
+        "id":"11",
+        "name":"AirMax Bella",
+        "description":"Look stylish in your workouts or in your day-to-day thanks to the Nike Air Max Bella Tr 2 Shoes, their Air max technology gives you better and cushioned footsteps that will make you feel safe and confident any time you wear them. | Nike Air Max Sneakers | Right handed",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_820224-MLA45568584387_042021-W.webp",
+        "price":"80.00",
+        "brand":"Nike"
+    },
+    {
+        "id":"13",
+        "name":"M880",
+        "description":"Our New Balance shoes are made for those who seek comfort and are also looking for a great performance design. This shoe is inspired by high-end running shoes. With a soft midsole for cushioning, a molded heel for extra support, and a rubber outsole for durability, it's ready for anything.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_655462-MLA49592782072_042022-W.webp",
+        "price":"40.00",
+        "brand":"NewBalance"
+    },
+    {
+        "id":"14",
+        "name":"Lite Racer",
+        "description":"Keep your feet comfortable and your style impeccable at all times with these adidas shoes. Wear them with your favorite running shorts for a sporty, casual look. A mesh upper helps keep your feet cool, while ultralight cushioning supports you with every step.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_863260-MLA49365400249_032022-W.webp",
+        "price":"80.00",
+        "brand":"Adidas"
+    },
+    {
+        "id":"15",
+        "name":"R78",
+        "description":"The Puma shoes are made with a breathable mesh upper, a textile interior and a padded collar that combines with a resistant rubber sole for all day. Its cushioning and comfort also allow you to go for a run both outdoors and indoors. It includes laces for a custom fit and Softride technology in the midsole to make the shoe feel much lighter.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_823848-MLA48553225145_122021-W.webp",
+        "price":"90.00",
+        "brand":"Puma"
+    },
+    {
+        "id":"16",
+        "name":"9314",
+        "description":"Jaguar has a complete line of footwear specially designed for its customers. Their products are innovative and comfortable. They adapt to your routine.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_609614-MLA48621932983_122021-W.webp",
+        "price":"60.00",
+        "brand":"Jaguar"
+    },
+    {
+        "id":"17",
+        "name":"373v2",
+        "description":"Our New Balance shoes are made for those who seek comfort and are also looking for a great performance design. This shoe is inspired by high-end running shoes. With a soft midsole for cushioning, a molded heel for extra support, and a rubber outsole for durability, it's ready for anything.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_854216-MLA46257047099_062021-W.webp",
+        "price":"60.00",
+        "brand":"NewBalance"
+    },
+    {
+        "id":"18",
+        "name":"AirMax Up",
+        "description":"Look stylish in your workouts or in your day-to-day thanks to the Nike Air Max Bella Tr 2 Shoes, their Air max technology gives you better and cushioned footsteps that will make you feel safe and confident any time you wear them. | Nike Air Max Sneakers | Right handed",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_792685-MLA45807338792_052021-W.webp",
+        "price":"110.00",
+        "brand":"Nike"
+    },
+    {
+        "id":"19",
+        "name":"Court Low",
+        "description":"Keep your feet comfortable and your style impeccable at all times with these adidas shoes. Wear them with your favorite running shorts for a sporty, casual look. A mesh upper helps keep your feet cool, while ultralight cushioning supports you with every step.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_937349-MLA49386523809_032022-W.webp",
+        "price":"80.00",
+        "brand":"Adidas"
+    },
+    {
+        "id":"20",
+        "name":"9310",
+        "description":"Jaguar has a complete line of footwear specially designed for its customers. Their products are innovative and comfortable. They adapt to your routine.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_709621-MLA48404007481_122021-W.webp",
+        "price":"60.00",
+        "brand":"Jaguar"
+    },
+    {
+        "id":"21",
+        "name":"Disperse",
+        "description":"The Puma shoes are made with a breathable mesh upper, a textile interior and a padded collar that combines with a resistant rubber sole for all day. Its cushioning and comfort also allow you to go for a run both outdoors and indoors. It includes laces for a custom fit and Softride technology in the midsole to make the shoe feel much lighter.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_842573-MLA46387240584_062021-W.webp",
+        "price":"90.00",
+        "brand":"Puma"
+    },
+    {
+        "id":"22",
+        "name":"420",
+        "description":"Our New Balance shoes are made for those who seek comfort and are also looking for a great performance design. This shoe is inspired by high-end running shoes. With a soft midsole for cushioning, a molded heel for extra support, and a rubber outsole for durability, it's ready for anything.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_871372-MLA48185584587_112021-W.webp",
+        "price":"50.00",
+        "brand":"NewBalance"
+    },
+    {
+        "id":"23",
+        "name":"AirMax Dawn",
+        "description":"Look stylish in your workouts or in your day-to-day thanks to the Nike Air Max Bella Tr 2 Shoes, their Air max technology gives you better and cushioned footsteps that will make you feel safe and confident any time you wear them. | Nike Air Max Sneakers | Right handed",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_782170-MLA48859544207_012022-W.webp",
+        "price":"40.00",
+        "brand":"Nike"
+    },
+    {
+        "id":"24",
+        "name":"The Kid",
+        "description":"Keep your feet comfortable and your style impeccable at all times with these adidas shoes. Wear them with your favorite running shorts for a sporty, casual look. A mesh upper helps keep your feet cool, while ultralight cushioning supports you with every step.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_846276-MLA49089654948_022022-W.webp",
+        "price":"80.00",
+        "brand":"Adidas"
+    },
+    {
+        "id":"25",
+        "name":"373",
+        "description":"Our New Balance shoes are made for those who seek comfort and are also looking for a great performance design. This shoe is inspired by high-end running shoes. With a soft midsole for cushioning, a molded heel for extra support, and a rubber outsole for durability, it's ready for anything.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_813032-MLA48184637194_112021-W.webp",
+        "price":"90.00",
+        "brand":"NewBalance"
+    },
+    {
+        "id":"26",
+        "name":"9069",
+        "description":"Jaguar has a complete line of footwear specially designed for its customers. Their products are innovative and comfortable. They adapt to your routine.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_687535-MLA44357731398_122020-W.webp",
+        "price":"60.00",
+        "brand":"Jaguar"
+    },
+    {
+        "id":"27",
+        "name":"Flyer",
+        "description":"The Puma shoes are made with a breathable mesh upper, a textile interior and a padded collar that combines with a resistant rubber sole for all day. Its cushioning and comfort also allow you to go for a run both outdoors and indoors. It includes laces for a custom fit and Softride technology in the midsole to make the shoe feel much lighter.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_934917-MLA48316983245_112021-W.webp",
+        "price":"70.00",
+        "brand":"Puma"
+    },
+    {
+        "id":"28",
+        "name":"AirMax 720",
+        "description":"Look stylish in your workouts or in your day-to-day thanks to the Nike Air Max Bella Tr 2 Shoes, their Air max technology gives you better and cushioned footsteps that will make you feel safe and confident any time you wear them. | Nike Air Max Sneakers | Right handed",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_941842-MLA46167198944_052021-W.webp",
+        "price":"70.00",
+        "brand":"Nike"
+    },
+    {
+        "id":"29",
+        "name":"9201",
+        "description":"Jaguar has a complete line of footwear specially designed for its customers. Their products are innovative and comfortable. They adapt to your routine.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_987920-MLA46249179124_062021-W.webp",
+        "price":"80.00",
+        "brand":"Jaguar"
+    },
+    {
+        "id":"30",
+        "name":"R78",
+        "description":"The Puma shoes are made with a breathable mesh upper, a textile interior and a padded collar that combines with a resistant rubber sole for all day. Its cushioning and comfort also allow you to go for a run both outdoors and indoors. It includes laces for a custom fit and Softride technology in the midsole to make the shoe feel much lighter.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_858251-MLA48318313277_112021-W.webp",
+        "price":"80.00",
+        "brand":"Puma"
+    },
+    {
+        "id":"31",
+        "name":"Adizero",
+        "description":"Keep your feet comfortable and your style impeccable at all times with these adidas shoes. Wear them with your favorite running shorts for a sporty, casual look. A mesh upper helps keep your feet cool, while ultralight cushioning supports you with every step.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_776929-MLA49379835585_032022-W.webp",
+        "price":"60.00",
+        "brand":"Adidas"
+    },
+    {
+        "id":"32",
+        "name":"Rose",
+        "description":"The Puma shoes are made with a breathable mesh upper, a textile interior and a padded collar that combines with a resistant rubber sole for all day. Its cushioning and comfort also allow you to go for a run both outdoors and indoors. It includes laces for a custom fit and Softride technology in the midsole to make the shoe feel much lighter.",
+        "image_url":"https://http2.mlstatic.com/D_915701-MLA49396617935_032022-O.jpg",
+        "price":"70.00",
+        "brand":"Puma"
+    },
+    {
+        "id":"33",
+        "name":"Courtpoint",
+        "description":"Keep your feet comfortable and your style impeccable at all times with these adidas shoes. Wear them with your favorite running shorts for a sporty, casual look. A mesh upper helps keep your feet cool, while ultralight cushioning supports you with every step.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_653680-MLA49386358715_032022-W.webp",
+        "price":"80.00",
+        "brand":"Adidas"
+    },
+    {
+        "id":"34",
+        "name":"X Ray 3",
+        "description":"The Puma shoes are made with a breathable mesh upper, a textile interior and a padded collar that combines with a resistant rubber sole for all day. Its cushioning and comfort also allow you to go for a run both outdoors and indoors. It includes laces for a custom fit and Softride technology in the midsole to make the shoe feel much lighter.",
+        "image_url":"https://http2.mlstatic.com/D_662954-MLA49522491774_032022-O.jpg",
+        "price":"60.00",
+        "brand":"Puma"
+    },
+    {
+        "id":"35",
+        "name":"Galaxy 5",
+        "description":"Keep your feet comfortable and your style impeccable at all times with these adidas shoes. Wear them with your favorite running shorts for a sporty, casual look. A mesh upper helps keep your feet cool, while ultralight cushioning supports you with every step.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_807678-MLA49718439034_042022-W.webp",
+        "price":"80.00",
+        "brand":"Adidas"
+    },
+    {
+        "id":"36",
+        "name":"AirMax React",
+        "description":"Look stylish in your workouts or in your day-to-day thanks to the Nike Air Max Bella Tr 2 Shoes, their Air max technology gives you better and cushioned footsteps that will make you feel safe and confident any time you wear them. | Nike Air Max Sneakers | Right handed",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_744349-MLA45684681067_042021-W.webp",
+        "price":"90.00",
+        "brand":"Nike"
+    },
+    {
+        "id":"37",
+        "name":"574",
+        "description":"Our New Balance shoes are made for those who seek comfort and are also looking for a great performance design. This shoe is inspired by high-end running shoes. With a soft midsole for cushioning, a molded heel for extra support, and a rubber outsole for durability, it's ready for anything.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_845986-MLA48644961231_122021-W.webp",
+        "price":"60.00",
+        "brand":"NewBalance"
+    },
+    {
+        "id":"3",
+        "name":"Ws237sc",
+        "description":"Shoe collectors who appreciate the vibe of our '70s running shoes are sure to love the 237. Featuring details from our classic designs, these streetwear shoes blend a retro look with modern styling for a sleek, versatile silhouette. to your urban style. Suede and mesh upper with lace closure provides a secure, comfortable fit all day.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_980263-MLA47889982678_102021-W.webp",
+        "price":"100.00",
+        "brand":"NewBalance"
+    },
+    {
+        "id":"10",
+        "name":"4325",
+        "description":"Jaguar has a complete line of footwear specially designed for its customers. Their products are innovative and comfortable. They adapt to your routine.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_678628-MLA49260587255_032022-W.webp",
+        "price":"80.00",
+        "brand":"Jaguar"
+    },
+    {
+        "id":"12",
+        "name":"AirMax 90",
+        "description":"Look stylish in your workouts or in your day-to-day thanks to the Nike Air Max Bella Tr 2 Shoes, their Air max technology gives you better and cushioned footsteps that will make you feel safe and confident any time you wear them. | Nike Air Max Sneakers | Right handed",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_970947-MLA45992360097_052021-W.webp",
+        "price":"60.00",
+        "brand":"Nike"
+    },
+    {
+        "id":"38",
+        "name":"9076",
+        "description":"Jaguar has a complete line of footwear specially designed for its customers. Their products are innovative and comfortable. They adapt to your routine.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_751369-MLA46319849505_062021-W.webp",
+        "price":"60.00",
+        "brand":"Jaguar"
+    },
+    {
+        "id":"39",
+        "name":"AirMax Intrik",
+        "description":"Look stylish in your workouts or in your day-to-day thanks to the Nike Air Max Bella Tr 2 Shoes, their Air max technology gives you better and cushioned footsteps that will make you feel safe and confident any time you wear them. | Nike Air Max Sneakers | Right handed",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_736757-MLA49727701974_042022-W.webp",
+        "price":"120.00",
+        "brand":"Nike"
+    },
+    {
+        "id":"40",
+        "name":"AirMax Verona",
+        "description":"You are beautiful, unique and strong. And they too. They are. Tell the world with your Nike Air Max Verona. Designed with every woman in mind, its leather, synthetic and textile upper features a soft collar, bold colors on select versions and unique stitching patterns that celebrate each woman's individual beauty. Nike Air cushioning adds a modern touch and is designed specifically for women, adding comfort and style to your ride.",
+        "image_url":"https://http2.mlstatic.com/D_NQ_NP_688910-MLA49473396135_032022-W.webp",
+        "price":"150.00",
+        "brand":"Nike"
+    }
+]
