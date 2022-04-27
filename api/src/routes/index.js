@@ -83,7 +83,8 @@ router.post('/product', async (req, res) =>{
         description,
         image_url,
         price,
-        brand
+        brand,
+        logo_url
     } = req.body
     
     let productCreated = await Product.create({
@@ -95,7 +96,7 @@ router.post('/product', async (req, res) =>{
     
     
     let bDB = await Brand.findOrCreate({
-        where: { name : brand}
+        where: { name : brand, logo_url : logo_url }
     })
     
     productCreated.addBrand(bDB[0]) 

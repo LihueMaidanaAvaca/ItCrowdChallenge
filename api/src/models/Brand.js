@@ -5,7 +5,12 @@ module.exports = (sequelize) => {
             type: DataTypes.STRING, 
             unique: true,
             allowNull: false
-            
         },
+        logo_url: {
+            type: DataTypes.STRING,
+            unique: true
+            // allowNull: false,
+          },
+
             });
 };

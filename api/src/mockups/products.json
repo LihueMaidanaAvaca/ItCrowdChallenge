@@ -21,7 +21,8 @@
         "description":"Keep your feet comfortable and your style impeccable at all times with these adidas shoes. Wear them with your favorite running shorts for a sporty, casual look. A mesh upper helps keep your feet cool, while ultralight cushioning supports you with every step.",
         "image_url":"https://http2.mlstatic.com/D_NQ_NP_924704-MLA49170790980_022022-W.webp",
         "price":"50.00",
-        "brand":"Adidas"
+        "brand":"Adidas",
+        "logo_url":"https://www.tiendadeporteshalcon.com/wp-content/uploads/2018/09/adidas-1.png"
     },
     {
         "id":"5",
@@ -29,7 +30,8 @@
         "description":"Look stylish in your workouts or in your day-to-day thanks to the Nike Air Max Bella Tr 2 Shoes, their Air max technology gives you better and cushioned footsteps that will make you feel safe and confident any time you wear them. | Nike Air Max Sneakers | Right handed",
         "image_url":"https://http2.mlstatic.com/D_NQ_NP_922812-MLA41971756678_052020-W.webp",
         "price":"80.00",
-        "brand":"Nike"
+        "brand":"Nike",
+        "logo_url":"https://i.pinimg.com/originals/46/54/82/465482df50de7f9e068b14d332dd4706.gif"
     },
     {
         "id":"6",
@@ -37,7 +39,8 @@
         "description":"Jaguar has a complete line of footwear specially designed for its customers. Their products are innovative and comfortable. They adapt to your routine.",
         "image_url":"https://http2.mlstatic.com/D_NQ_NP_893799-MLA47321472480_092021-W.webp",
         "price":"90.00",
-        "brand":"Jaguar"
+        "brand":"Jaguar",
+        "logo_url":"https://http2.mlstatic.com/D_NQ_NP_973789-MLA42681971202_072020-O.jpg"
     },
     {
         "id":"7",
@@ -45,7 +48,8 @@
         "description":"Our New Balance shoes are made for those who seek comfort and are also looking for a great performance design. This shoe is inspired by high-end running shoes. With a soft midsole for cushioning, a molded heel for extra support, and a rubber outsole for durability, it's ready for anything.",
         "image_url":"https://http2.mlstatic.com/D_NQ_NP_966237-MLA46117390796_052021-W.webp",
         "price":"50.00",
-        "brand":"NewBalance"
+        "brand":"NewBalance",
+        "logo_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTREIpPhUNC_O27VD0v_8XNJZRdJ-taGLOHLpOvkHbbM2FG3XGfozZeyeVEloSrRTkcxeg&usqp=CAU"
     },
     {
         "id":"8",
@@ -93,7 +97,8 @@
         "description":"The Puma shoes are made with a breathable mesh upper, a textile interior and a padded collar that combines with a resistant rubber sole for all day. Its cushioning and comfort also allow you to go for a run both outdoors and indoors. It includes laces for a custom fit and Softride technology in the midsole to make the shoe feel much lighter.",
         "image_url":"https://http2.mlstatic.com/D_NQ_NP_823848-MLA48553225145_122021-W.webp",
         "price":"90.00",
-        "brand":"Puma"
+        "brand":"Puma",
+        "logo_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcSfsUJlRwezrIPJOiF0TSb3ceSo7QeURZ8gfUUwwKE5tLqSLcUcH1EwwiaQxZFUTog1E&usqp=CAU"
     },
     {
         "id":"16",
