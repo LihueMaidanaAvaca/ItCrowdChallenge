@@ -2,7 +2,6 @@ const { Router } = require('express');
 const response = require('../mockups/products.json')
 const axios = require ('axios')
 const { Product, Brand } = require ('../db')
-// const products = require ('./mockups/products.json')
 
 const router = Router();
 
@@ -11,18 +10,19 @@ const getMockUpInfo = () => {
    
     const products = response.map(p=> {
         return {
-          id: p.id,  
-          name: p.name,
-          description: p.description,
-          image_url: p.image_url,
-          price: p.price,
-          brand: p.brand
-        }
-      })
-      return products
+        id:  p.id,  
+        name:  p.name,
+        description:  p.description,
+        image_url:  p.image_url,
+        price:  p.price,
+        brand:  p.brand
+        
+      }
+    });
+    
+    return products
     
 };
-
 
 
 const getDbInfo = async () => {
@@ -37,26 +37,18 @@ const getDbInfo = async () => {
 }
 
 const getAllProducts = async () => {
-    const mockUpInfo = await getMockUpInfo();
+
     const dbInfo = await getDbInfo();
-    const infoTotal = dbInfo.concat(mockUpInfo);
+    const infoTotal = dbInfo.concat();
     return infoTotal
 }
 
 router.get('/products', async (req, res) => {
-    const name = req.query.name
     
     let productsTotal = await getAllProducts();
-    if(name){
-        
-        let productTitle = await productsTotal.filter(product => product.title.toLowerCase().includes(name.toLowerCase()))
-        
-        productTitle.length ?
-        res.status(200).send(productTitle) :
-        res.status(404).send('error')
-    } else{
-        res.status(200).send(productsTotal)
-    }
+    
+    res.status(200).send(productsTotal)
+    
 })
 
 router.get('/brands', async (req, res)=>{
@@ -74,17 +66,6 @@ router.get('/brands', async (req, res)=>{
         
 })
 
-router.post('/brand', async (req, res)=>{
-    const newBrand= req.query.name 
-
-    const newDBBrand = await Brand.findOrCreate({
-        where: { name: newBrand}
-    })
-     
-    res.send(newDBBrand)
-
-
-})
 
 router.get('/products/:id', async (req, res)=>{
     const id= req.params.id;
@@ -98,30 +79,65 @@ router.get('/products/:id', async (req, res)=>{
 })
 
 router.post('/product', async (req, res) =>{
-    let{
-        name,
+    let{name,
         description,
         image_url,
         price,
         brand
     } = req.body
-
-    let productCreated = await Recipe.create({
+    
+    let productCreated = await Product.create({
         name,
         description,
         image_url,
         price,
     })
     
-    brand.map(async b=> {
-        let bDB = await Brand.findOrCreate({
-            where: { name : b}
-        })
-        
-    productCreated.addBrand( bDB[0]) })
+    
+    let bDB = await Brand.findOrCreate({
+        where: { name : brand}
+    })
+    
+    productCreated.addBrand(bDB[0]) 
     
     res.json(productCreated)
 })
 
+router.post('/brand', async (req, res)=>{
+    const newBrand= req.query.name 
+
+    const newDBBrand = await Brand.findOrCreate({
+        where: { name: newBrand}
+    })
+     
+    res.send(newDBBrand)
+
+
+})
+
+router.put('/products/:id', async (req, res) => {
+    let {id} = req.params;
+    let {name, description, image_url, price}= req.body
+
+    let product = await Product.findByPk(id)
+    product.name = name
+    product.description = description
+    product.image_url = image_url
+    product.price = price
+    
+    await product.save()
+     
+    res.json(product)
+})
+
+router.delete('/products/:id', (req, res, next) => {
+    let id = req.params.id;
+    try {
+        Product.destroy({where: {id: id}});
+        res.sendStatus(200);
+    } catch (err) {
+        next(err);
+    }
+});
 
 module.exports = router;

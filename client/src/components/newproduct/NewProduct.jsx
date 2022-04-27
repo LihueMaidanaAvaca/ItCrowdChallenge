@@ -1,36 +1,31 @@
 import React, {useState, useEffect} from "react";
 import {Link, useHistory} from 'react-router-dom';
 import {postNewProduct, getBrands} from '../../actions';
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import styles from "./NewProduct.module.css"
 
 
-function validate(input){
-    let errors={};
-    if(!input.title ){errors.title = 'Name is require'}
-    if(!input.summary){errors.summary = 'Write 20 to 100 characters'}
-    if(!input.score || input.score < 0 || input.score > 100){errors.score = 'Put 1 to 100'}
-    if(!input.healthScore || input.healthScore < 0 || input.healthScore > 100){errors.healthScore = 'Put 1 to 100'}
-    if(!input.steps){errors.steps = 'Write 20 to 100 characters'}
-    if(!input.image ){errors.image = 'Use an url'}
-    if(!input.types.length ){errors.types = 'at least touch one'}
-    return errors;
-}
+// function validate(input){
+//     let errors={};
+//     if(!input.name ){errors.name = 'Name is require'}
+//     if(!input.description){errors.description = 'Write 20 to 100 characters'}
+//     if(!input.steps){errors.steps = 'Write 20 to 100 characters'}
+//     if(!input.image_url ){errors.image = 'Use an url'}
+//     if(!input.brand ){errors.brand = 'Name is require'}
+//     return errors;
+// }
 
 export default function NewProduct(){
     const dispatch = useDispatch()
     const history = useHistory()
-    const brands = useSelector((state) => state.brands)
     const [errors, setErrors] = useState({});
 
     const [input, setInput] = useState({
-        title: "",
-        summary: "",
-        score: 0,
-        healthScore: 0,
-        image:"",
-        steps: "",
-        types: []
+        name: "",
+        description: "",
+        image_url:"",
+        price: 0,
+        brand: "",
     })
     
     function handleChange(e){
@@ -38,36 +33,14 @@ export default function NewProduct(){
             ...input,
             [e.target.name] : e.target.value
         })
-        setErrors(validate({
-            ...input,
-            [e.target.name] : e.target.value
-        }))
+        // setErrors(validate({
+        //     ...input,
+        //     [e.target.name] : e.target.value
+        // }))
     }
     
-    function handleCheck(e){
-        if(e.target.checked){
-            setInput({
-                ...input,
-                types: e.target.value
-            })
-        }
-        setErrors(validate({
-            ...input,
-            types: e.target.value
-        }))
-    }
-
-    function handleSelect(e){
-        setInput({
-            ...input,
-            types: [...input.types,e.target.value]
-        })
-        setErrors(validate({
-            ...input,
-            types: [...input.types,e.target.value]
-        }))
-    }
-
+    
+    
     function handleSubmit(e){
         e.preventDefault();
         if(Object.values(errors).length > 0) alert ("Please finish the form")
@@ -76,13 +49,11 @@ export default function NewProduct(){
             postNewProduct(input)
             alert("New Product Save")
             setInput({
-                title: "",
-                summary: "",
-                score: 1,
-                healthScore: 1,
-                image:"",
-                steps: "",
-                types: []
+                name: "",
+                description: "",
+                image_url:"",
+                price: 0,
+                brand: "",
             })
             history.push('/home')
         }
@@ -102,70 +73,50 @@ export default function NewProduct(){
     return(
         <div className={styles.every}>
             <Link to= '/home' ><button>Home</button></Link>
-            <h1 className={styles.title}>NewRecipe!</h1>
+            <h1 className={styles.title}>NewProduct</h1>
             <form className={styles.form} onSubmit={(e)=>handleSubmit(e)}>
                 <div>
-                    <label className={styles.label}>Title:</label>
-                    <input type= "text" value= {input.title} name= "title"onChange={(e)=>handleChange(e)}
+                    <label className={styles.label}>name:</label>
+                    <input type= "text" value= {input.title} name= "name"onChange={(e)=>handleChange(e)}
                     />
-                    {errors.title && (
-                    <p className={styles.error}>{errors.title}</p>
-                    )}
+                    {/* {errors.name && (
+                    <p className={styles.error}>{errors.name}</p>
+                    )} */}
                 </div>
                 <div>
-                    <label className={styles.label}>Summary:</label>
-                    <textarea className={styles.largetext} type= "text"  value= {input.summary} name= "summary" onChange={(e)=>handleChange(e)}/>
-                    {errors.summary && (
-                    <p className={styles.error}>{errors.summary}</p>
-                    )}
-                </div>
-                <div>
-                    <label className={styles.label}>Score:</label>
-                    <input type= "number" min="1" max="100" size={3} value= {(input.score)} name= "score" onChange={(e)=>handleChange(e)}/>
-                    {errors.score && (
-                    <p className={styles.error}>{errors.score}</p>
-                    )}
-                </div>
-                <div>
-                    <label className={styles.label}>healthScore:</label>
-                    <input type= "number"  min="1" max="100" size={3}  value= {input.healthScore} name= "healthScore" onChange={(e)=>handleChange(e)}/>
-                    {errors.healthScore && (
-                    <p className={styles.error}>{errors.healthScore}</p>
-                    )}
-                </div>
-                <div>
-                    <label className={styles.label}>Steps:</label>
-                    <textarea  type= "text" value= {input.steps} name= "steps"  size={32} onChange={(e)=>handleChange(e)}/>
-                    {errors.steps && (
-                    <p className={styles.error}>{errors.steps}</p>
-                    )}
+                    <label className={styles.label}>description:</label>
+                    <textarea className={styles.largetext} type= "text"  value= {input.description} name= "description" onChange={(e)=>handleChange(e)}/>
+                    {/* {errors.description && (
+                    <p className={styles.error}>{errors.description}</p>
+                    )} */}
                 </div>
                 <div>
                     <label className={styles.label}>Image:</label>
-                    <input type= "url" value= {input.image} name= "image" onChange={(e)=>handleChange(e)}/>
-                    {errors.image && (
-                    <p className={styles.error}>{errors.image}</p>
-                    )}
+                    <input type= "url" value= {input.image_url} name= "image_url" onChange={(e)=>handleChange(e)}/>
+                    {/* {errors.image_url && (
+                    <p className={styles.error}>{errors.image_url}</p>
+                    )} */}
                 </div>
-                <div className={styles.checks}>
-                    <label className={styles.label}>Diet:</label>
-                    <label><input type= "checkbox" value= "vegan" name= "vegan" onChange={(e)=>handleSelect(e)}/>Vegan</label>
-                    <label><input type= "checkbox" value= "gluten free" name= "gluten free" onChange={(e)=>handleSelect(e)}/>Gluten Free</label>
-                    <label><input type= "checkbox" value= "lacto ovo vegetarian" name= "lacto ovo vegetarian" onChange={(e)=>handleSelect(e)}/>Lacto Ovo Vegetarian</label>
-                    <label><input type= "checkbox" value= "dairy free" name= "dairy free" onChange={(e)=>handleSelect(e)}/>Dairy Free</label>
-                    <label><input type= "checkbox" value= "paleolithic" name= "paleolithic" onChange={(e)=>handleSelect(e)}/>Paleolithic</label>
-                    <label><input type= "checkbox" value= "pescatarian" name= "pescatarian" onChange={(e)=>handleSelect(e)}/>Pescatarian</label>
-                    <label><input type= "checkbox" value= "fodmap friendly" name= "fodmap friendly" onChange={(e)=>handleSelect(e)}/>Fodmap Friendly</label>
-                    <label><input type= "checkbox" value= "whole 30" name= "whole 30" onChange={(e)=>handleSelect(e)}/>Whole 30</label>
-                    <label><input type= "checkbox" value= "primal" name= "primal" onChange={(e)=>handleSelect(e)}/>Primal</label>
-                    <label><input type= "checkbox" value= "ketogenic" name= "ketogenic" onChange={(e)=>handleSelect(e)}/>Ketogenic</label>
-                    
-                    {errors.types && (
-                    <p className={styles.error}>{errors.types}</p>
-                    )}
+                <div>
+                    <label className={styles.label}>price:</label>
+                    <input type= "number" min="30" max="200" size={3} value= {(input.price)} name= "price" onChange={(e)=>handleChange(e)}/>
+                    {/* {errors.price && (
+                    <p className={styles.error}>{errors.price}</p>
+                    )} */}
                 </div>
                 
-            <button  className={styles.label}type='submit' >Save!</button>
+                <div>
+
+                <label>Brand:</label>
+                <input type= "text" value= {input.brand} name= "brand" onChange={(e)=>handleChange(e)}
+                    />
+                    {/* {errors.brand && (
+                    <p className={styles.error}>{errors.brand}</p>
+                    )} */}
+                </div>
+                
+                
+            <button  className={styles.label}type='submit' >Save</button>
             
                 
             </form>
