@@ -23,20 +23,28 @@ export default function Detail(props){
     }, [myProduct])
     
     return (
-        <div className={style.back} >          
-         <div>
-            <Link to= '/home'>
-                <button >Home</button>
-            </Link>
+        <section className={style.container} >          
+         <Link to= '/home' class={style.home}>Home</Link>
             {
                 myProduct.length>0?
-                <div className={style.megacard}>
+            <div class={style.details}>
                     <h1 className={style.title}>{myProduct[0].name} </h1>
-                    <img src={myProduct[0].image_url} className={style.image} width="400px" height="400px" />
+                <div className={style.info}>
                     
-                    </div> :<p>Loading...</p>
+                    <img src={myProduct[0].image_url} className={style.image_url}  />
+                    
+                    <div className={style.text}>
+                    
+                     <h2>U$D{myProduct[0].price}</h2>
+                     <h3>{myProduct[0].description}</h3>
+                     <div key={myProduct[0].id}>
+                     <Link to={`/edit`} >edit</Link>
+                     </div>
+
+                    </div>
+                </div> 
+            </div>  :<p>Loading...</p>
             }
-            </div>   
-        </div>
+        </section>
     )
 }

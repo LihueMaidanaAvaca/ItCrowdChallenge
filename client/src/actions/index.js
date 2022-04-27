@@ -71,6 +71,13 @@ export async function postNewProduct(payload){
 
 }
 
+export async function putProduct(id){
+    
+    const response = await axios.put("/products/"+id);
+    return response;
+
+}
+
 export function filterByBrand(payload){
     return {
         type: FILTER_BY_BRAND,

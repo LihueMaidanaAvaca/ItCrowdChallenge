@@ -1,4 +1,4 @@
-import {GET_PRODUCTS, GET_NAMEPRODUCTS, SET_NAME, GET_BRANDS, FILTER_BY_BRAND, FILTER_CREATED, ORDER_BY_NAME, ORDER_BY_PRICE, GET_DETAILS } from '../actions';
+import {GET_PRODUCTS, GET_NAMEPRODUCTS,  GET_BRANDS, FILTER_BY_BRAND, FILTER_CREATED, ORDER_BY_PRICE, GET_DETAILS } from '../actions';
 
 
 const initialState = {
@@ -23,53 +23,32 @@ const initialState = {
       case FILTER_BY_BRAND:
             const allProducts = state.allProducts
             
-            const brandFilter = action.payload === 'brands' ? allProducts :  allProducts.filter(el => el.brand === action.payload);
+            const brandFilter = action.payload === 'brands' ? allProducts :  allProducts.filter(el => {const aux = el.Brands?.map(brn=> brn.name);
+              if (aux?.includes(action.payload)) return el;});
             
             
             return {...state, products: brandFilter
             } 
-      case ORDER_BY_NAME:
-              let sortedArr = action.payload === 'asd' ? state.products.sort(function (a, b){
-                  if(a.title > b.title){
-                      return 1;
-                  }
-                  if(b.title > a.title){
-                      return -1;
-                  }
-                  return 0;
-                }) :
-                state.products.sort(function (a, b){
-                  if(a.title > b.title){
-                    return -1;
-                  }
-                  if(b.title > a.title){
-                    return 1;
-                  }
-                  return 0
-                })
-                return{
-                  ...state, products: sortedArr
-              }  
+      
       case ORDER_BY_PRICE:
               let sortedSArr = action.payload === 'asd' ? state.products.sort(function (a, b){
-                  if(a.healthScore > b.healthScore){
+                  if(a.price > b.price){
                       return 1;
                   }
-                  if(b.healthScore > a.healthScore){
+                  if(b.price > a.price){
                       return -1;
                   }
                   return 0;
                 }) :
-                state.products.sort(function (a, b){
-                  if(a.healthScore > b.healthScore){
+                 state.products.sort(function (a, b){
+                  if(a.price > b.price){
                     return -1;
                   }
-                  if(b.healthScore > a.healthScore){
+                  if(b.price > a.price){
                     return 1;
                   }
                   return 0
                 })
-                console.log('ahora el tema esta aca', sortedSArr)
                 return{
                   ...state, products: sortedSArr
               }
@@ -88,7 +67,8 @@ const initialState = {
                 return{
                     ...state,
                     detail: action.payload
-                }                         
+                }
+                                         
     default:
          return state;
     }}   

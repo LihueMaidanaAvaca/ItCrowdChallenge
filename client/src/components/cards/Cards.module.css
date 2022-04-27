@@ -1,8 +1,8 @@
 
 .card {
-    background-color: rgba(135, 183, 247, 0.22);
-    border-radius: 10px 10px 70px 10px;
-    height: 300px;
+    background-color: rgba(0, 0, 0, 0.849);
+    border-radius: 10px 10px 10px 10px;
+    height: 260px;
     width: 350px;
     margin: 3px;
     /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(255, 174, 0, 0.39) 0px -3px 5px; */
@@ -11,7 +11,7 @@
 
 .card:hover{
     transform: translateY(-9px);
-    background-color:rgba(182, 182, 182, 0.433);
+    background-color:rgb(73, 73, 73);
 }
 
 .image{
@@ -20,6 +20,7 @@
     background-color: white;
     border-radius: 50%;
     float: left;
+    margin: 10px;
 }
 
 .image_url{
@@ -30,11 +31,29 @@
     border-radius: 35%;
 }
 
-.info{
-    margin-left: 5px;
+.logo_url{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    margin: 10px;
 }
 
-h3.info:link, h3.info:visited, h3.info:active {
+.info h3{
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.price{
+    color: green;
+}
+
+
+
+.info h3:link, .info h3:visited, .info h3:active {
     text-decoration:none;
   }
 

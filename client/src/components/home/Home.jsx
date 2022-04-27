@@ -36,17 +36,7 @@ export function Home(){
         dispatch(filterByBrand(e.target.value))
     }
 
-    function handleFilterCreated(e){
-        dispatch(filterCreated(e.target.value))
-    }
-
-    function handleSort(e){
-        e.preventDefault();
-        dispatch(orderByName(e.target.value))
-        setCurrentPage(1);
-        setOrden(`Ordered ${e.target.value}`)    
-    }
-
+    
     function handleSortPrice(e){
         e.preventDefault();
         dispatch(orderByPrice(e.target.value))
@@ -62,20 +52,23 @@ export function Home(){
         <div className={styles.every}>
             
             <header className={`${styles.title}`}> HighHigh 
-            <Link to= '/new' className={styles.newpro}>New Product</Link>
+            
+            <Link to= '/new' className={styles.newpro}>+</Link>
             
                 
-                <select className={styles.opcions} defaultValue='default' onChange= {e => handleSortPrice(e)}>
+                <select className={styles.options} defaultValue='default' onChange= {e => handleSortPrice(e)}>
                 <option value='default' disabled='disabled'>Price</option>
-                    <option value= 'des'>BEST</option>
-                    <option value= 'asd'>WORST</option>
+                    <option value= 'asd'>low</option>
+                    <option value= 'des'>high</option>
                 </select>
-                <select className={styles.opcions} defaultValue='default' onChange={(e)=>handleFilterBrand(e)}>
+                
+                <select className={styles.options} defaultValue='default' onChange={(e)=>handleFilterBrand(e)}>
                      <option value='default' disabled='disabled' name='brand' key={'a'} >Brands</option>
                      {brands.map((d,i)=>(
                          <option name='brands'key={i} value={d.name}>{d.name}</option>
                          ))}
                  </select>
+                
                      </header>
             <div  >
                 
@@ -92,8 +85,8 @@ export function Home(){
                     return (
                         <div key={product.id}>
                            <Link to={`/${product.id}`}>
-                           <Card name={product.name} description={product.description} image_url={product.image_url} price={product.price}
-                                 brand={product.brand} 
+                           <Card name={product.name} image_url={product.image_url} price={product.price}
+                                 brand={product.brand} logo_url={product.Brands[0].logo_url}
                            />
                            </Link>
                        </div> 
